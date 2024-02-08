@@ -1,11 +1,21 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
     <meta charset="utf-8">
-    <title>Hello wasm-pack!</title>
-  </head>
-  <body>
-    <noscript>This page contains webassembly and javascript content, please enable javascript in your browser.</noscript>
-    <script src="./bootstrap.js"></script>
-  </body>
+    <title>Cat image processor</title>
+</head>
+<body>
+<noscript>This page contains webassembly and javascript content, please enable javascript in your browser.</noscript>
+
+<input type="file"
+       name="image-upload"
+       id="image-upload"
+       value=""
+>
+<br>
+<button id="shrink">Shrink</button>
+<br>
+<canvas id="preview"></canvas>
+<script src="./bootstrap.js"></script>
+</body>
 </html>
